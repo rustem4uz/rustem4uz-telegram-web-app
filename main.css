@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.controls input,
+.controls select,
+.controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+}
+.controls input {
+    width: 200px;
+}
+.controls select,
+.controls button {
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s;
+}
+.controls select:hover,
+.controls button:hover {
+    background: #555;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .info {
+    padding: 15px;
+}
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.card .category {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+}
+.card .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background .2s;
+}
+.card button:hover {
+    background: #0056b3;
+}
